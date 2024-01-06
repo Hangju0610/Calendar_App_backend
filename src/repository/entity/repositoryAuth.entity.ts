@@ -18,7 +18,7 @@ export class RepositoryAuth {
   @PrimaryColumn()
   repositoryId: number;
 
-  @Column({ type: 'enum', enum: RepositoryRole })
+  @Column({ type: 'enum', enum: RepositoryRole, default: RepositoryRole.User })
   Role: RepositoryRole;
 
   @CreateDateColumn({ name: 'created_at' })

@@ -1,6 +1,7 @@
 import { DataSource, DataSourceOptions } from 'typeorm';
+import { config } from 'dotenv';
 
-console.log(__dirname);
+config({ path: '.env' });
 const options: DataSourceOptions = {
   type: 'postgres',
   host: process.env.DB_HOST,

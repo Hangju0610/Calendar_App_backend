@@ -26,5 +26,5 @@ export class Repository {
     () => RepositoryAuth,
     (repositoryAuth) => repositoryAuth.repository,
   )
-  repositoryAuth: RepositoryAuth;
+  repositoryAuth: RepositoryAuth[];
 }

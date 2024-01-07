@@ -1,3 +1,4 @@
+import { Issue } from '../../issue/entity/issue.entity';
 import { RepositoryAuth } from '../../repository/entity/repositoryAuth.entity';
 import {
   Column,
@@ -29,5 +30,8 @@ export class User {
   updatedAt: Date;
 
   @OneToMany(() => RepositoryAuth, (repositoryAuth) => repositoryAuth.user)
-  repositoryAuth: RepositoryAuth;
+  repositoryAuth: RepositoryAuth[];
+
+  @OneToMany(() => Issue, (issue) => issue.user)
+  issue: Issue[];
 }

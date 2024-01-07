@@ -1,5 +1,5 @@
 export enum Size {
-  xLarge = 'X-LARGE',
+  XLarge = 'X-LARGE',
   Large = 'LARGE',
   Medium = 'MEDIUM',
   Small = 'SMALL',
